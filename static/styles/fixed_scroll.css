@@ -59,7 +59,7 @@ margin-bottom: -50px;
 @media (max-width: 1200px) {
   .logo {content: url("img/thescarletletter.png"); position: inherit;}
 }
-@media (min-width: 375px) and (max-width: 950px) {
+@media (min-width: 375px) and (max-width: 1090px) {
   .navbar-dark .navbar-nav .nav-link {color: white !important;}
 }
 
