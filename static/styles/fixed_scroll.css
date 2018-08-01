@@ -1,0 +1,164 @@
+figure {
+  margin: auto;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: black !important;
+}
+.head {
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: -100px;
+   margin-bottom: -50px;
+   width: 70%;
+}
+.about_us {
+font-family: 'Eczar', serif !important;
+font-weight: normal;
+font-size: 20px;
+padding: 100px 0 !important;
+max-width: 640px;
+margin: 0 auto;
+text-align: center;
+margin-bottom: -50px;
+}
+
+.main_div {
+  height: 5000px;
+}
+
+/*Parallax*/
+
+.cocktail_box {
+  position: relative;
+  height: 800px;
+  background-image: url("img/Lucky-Pig.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .cocktail_box {background-image: url("img/cinema/mint.gif"); background-position: center;}
+}
+@media (min-width: 813px) and (max-width:950px) {
+  .cocktail_box {background-image: url("img/cinema/pour.gif"); background-position: center; background-size: cover;}
+
+}
+@media (min-width: 951px) and (max-width:1270px) {
+  .cocktail_box {background-image: url("img/cinema/berry.gif"); background-position: center;}
+}
+@media (max-width:1270px) {
+  .coffee {display: none;}
+  .espresso_martini {display: none;}
+  .old_fashioned {display: none;}
+  .dirty_martini {display: none;}
+  .olive {display: none;}
+}
+@media (max-width: 1200px) {
+  .logo {content: url("img/thescarletletter.png"); position: inherit;}
+}
+@media (min-width: 375px) and (max-width: 950px) {
+  .navbar-dark .navbar-nav .nav-link {color: white !important;}
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 400px;
+}
+.coffee {
+  width: 150px;
+  left: 100px;
+  top: 305px;
+  position: absolute;
+}
+.espresso_martini {
+  width: 460px;
+  right: 850px;
+  top: 250px;
+  position: absolute;
+}
+.old_fashioned {
+  width: 270px;
+  position: absolute;
+  left: 850px;
+  top: 680px;
+}
+.dirty_martini {
+  width: 950px;
+  position: absolute;
+  left: 650px;
+  top: 260px;
+}
+.olive {
+  width: 220px;
+  position: absolute;
+  left: 985px;
+  top: 360px;
+}
+
+/*image grid*/
+
+.container img {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease-in-out;
+  display: block;
+  overflow: hidden;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.container .is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/*Navbar styling*/
+
+.navbar-nav > li{
+  padding-left:40px;
+  padding-right:40px;
+  padding-top: 40px;
+  font-size: 20px;
+  font-family: 'Sanchez', serif;
+  font-weight: bold;
+  color: black;
+}
+
+/*figcaption styling*/
+
+figcaption {
+  position: absolute;
+  font-family: 'Sanchez', serif;
+  font-style: italic;
+  font-weight: lighter;
+  background: black;
+  color: white;
+  padding: 2px 8px;
+  opacity: 0;
+  bottom: 15px;
+  left: -100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.col-md-4:hover figcaption {
+  opacity: 1;
+  left: 0px;
+}
+
+img.img-fluid.rounded.is-showing:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  overflow: hidden;
+}
+
+.col-md-4 {
+  overflow: hidden;
+}

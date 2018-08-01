@@ -1,0 +1,21 @@
+.inner {
+  display: table;
+  margin: 0 auto;
+}
+.outer {
+  background-image: url("img/leaf.png");
+  background-position: center;
+  background-size: cover;
+}
+nav .navbar-nav li a {
+   font-size: 20px;
+}
+.navbar-nav li{
+  padding-left:40px;
+  padding-right:40px;
+  padding-top: 20px;
+  font-family: 'Sanchez', serif;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important;
+}

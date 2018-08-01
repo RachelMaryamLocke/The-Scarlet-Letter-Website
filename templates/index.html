@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title> The Scarlet Letter </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/fixed_scroll.css') }}">
+    <link rel="icon" type="image/ico" href="{{ url_for('static',filename='images/favicon.ico') }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
+    <link href="{{ url_for('static',filename='styles/bootstrap.css') }}" rel="stylesheet">
+</head>
+<body>
+
+  <header class="cocktail_box">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('menu') }}">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('booking') }}">Book Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+      <img class="logo img-fluid" src="{{ url_for('static',filename='images/logomain2.png') }}" />
+      <img class="old_fashioned" src="{{ url_for('static',filename='images/white-russian-1475810495-10488.png') }}" />
+      <img class="coffee" src="{{ url_for('static',filename='images/2759423-0-fresh-coffee-beans.png') }}" />
+      <img class="espresso_martini" src="{{ url_for('static',filename='images/f2e88ea270e99bca45f80d41fefeda40.png') }}" />
+      <img class="olive" src="{{ url_for('static',filename='images/Olivenzweig.png') }}" />
+      <img class="dirty_martini" src="{{ url_for('static',filename='images/DirtyMartini.png') }}" />
+  </header>
+
+  <section class="content">
+    <article class="about_us">
+      <h1>
+        <img class="head img-fluid" src="{{ url_for('static',filename='images/head.png') }}">
+      </h1>
+      <p> A speakeasy, also called a blind pig or blind tiger, is an illicit establishment that sells alcoholic beverages. Such establishments came into prominence in the United States during the Prohibition era (1920–1933, longer in some states). During that time, the sale, manufacture, and transportation (bootlegging) of alcoholic beverages was illegal throughout the United States.</p>
+    </article>
+  </section>
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-4 mb-3">
+        <img class="img-fluid rounded" src="{{ url_for('static',filename='images/cocktails/small/bramble.jpg') }}">
+        <figcaption>Gin Bramble <strong>£10</strong></figcaption>
+      </div>
+      <div class="col-md-4 mb-3">
+        <img class="img-fluid rounded" src="{{ url_for('static',filename='images/cocktails/small/mai-thai.jpg') }}">
+        <figcaption>Mai Tai <strong>£10</strong></figcaption>
+      </div>
+      <div class="col-md-4 mb-3">
+        <img class="img-fluid rounded" src="{{ url_for('static',filename='images/cocktails/small/Panda-cocktail.jpg') }}">
+        <figcaption>Orient Express <strong>£13</strong></figcaption>
+      </div>
+      <div class="col-md-4 mb-3">
+        <img class="img-fluid rounded" src="{{ url_for('static',filename='images/cocktails/small/carhoots.jpg') }}">
+        <figcaption>Pisco Sour <strong>£9</strong></figcaption>
+      </div>
+      <div class="col-md-4 mb-3">
+        <img class="img-fluid rounded" src="{{ url_for('static',filename='images/cocktails/small/watermelon.jpg') }}">
+        <figcaption>Firecracker <strong>£11</strong></figcaption>
+      </div>
+      <div class="col-md-4 mb-3">
+        <img class="img-fluid rounded" src="{{ url_for('static',filename='images/cocktails/small/White-Russian-2.jpg') }}">
+        <figcaption>Cinnamon White Russian <strong>£10</strong></figcaption>
+      </div>
+      <div class="col-md-4 mb-3">
+        <img class="img-fluid rounded" src="{{ url_for('static',filename='images/cocktails/small/crossfire-hurricane.jpg') }}">
+        <figcaption>Crossfire hurricane <strong>£12</strong></figcaption>
+      </div>
+      <div class="col-md-4 mb-3">
+        <img class="img-fluid rounded" src="{{ url_for('static',filename='images/cocktails/small/salted-caramel.jpg') }}">
+        <figcaption>Salted Caramel Espresso Martini <strong>£12</strong></figcaption>
+      </div>
+      <div class="col-md-4 mb-3">
+        <img class="img-fluid rounded" src="{{ url_for('static',filename='images/cocktails/small/gin-sling.jpg') }}">
+        <figcaption>Cuban Cherry <strong>£9</strong></figcaption>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src="{{ url_for('static',filename='jquery.js') }}"></script>
+<script src="{{ url_for('static',filename='functions.js') }}"></script>
+<script src="{{ url_for('static',filename='bootstrap.js') }}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title> The Scarlet Letter </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/contact.css') }}">
+    <link rel="icon" type="image/ico" href="{{ url_for('static',filename='images/favicon.ico') }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+    <link href="{{ url_for('static',filename='styles/bootstrap.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="inner">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('booking') }}">Book Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('menu') }}">Menu</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-4 mb-3 rounded img-fluid" id="googleMap" style="width:20%;height:500px;"></div>
+      <div class="col-md-4 mb-3 rounded contact details">
+          <p id="title"> Contact Details </p><br>
+          <p> Address: 16 Horner Square, Old Spital Fields Market, London E1 6EW, UK.</p><br>
+          <p> Email: info@thescarletletter.com</p><br>
+          <p>Phone: 020 7946 0660</p>
+      </div>
+    </div>
+  </div>
+
+<script>
+
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.525955,-0.077093),
+    zoom:15,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+};
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEBuUbznpmFOWJjVC3DPiPTgkQtQzY4kM&callback=myMap"></script>
+
+<script type="text/javascript" src="{{ url_for('static',filename='jquery.js') }}"></script>
+<script src="{{ url_for('static',filename='functions.js') }}"></script>
+<script src="{{ url_for('static',filename='bootstrap.js') }}"></script>
+
+</body>
+
+</html>

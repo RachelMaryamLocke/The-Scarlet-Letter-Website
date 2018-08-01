@@ -1,0 +1,36 @@
+.background {
+  background-image: url("img/ProhibitionSeattle.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  font-size: 24px;
+  padding: 25px;
+}
+.parallax {
+    padding: 100px;
+    background: transparent;
+}
+.info {
+  z-index: 2;
+  position: relative;
+  font-family: 'Pinyon Script', cursive;
+  color: white;
+}
+p {
+  font-family: 'Pinyon Script', cursive;
+}
+#header{
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+}
+#infotwo {
+  text-align: right;
+}
+#infothree {
+  text-align: center;
+}

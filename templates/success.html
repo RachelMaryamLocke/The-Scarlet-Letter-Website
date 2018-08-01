@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title> The Scarlet Letter </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/smenu.css') }}">
+    <link rel="icon" type="image/ico" href="{{ url_for('static',filename='images/favicon.ico') }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+    <link href="{{ url_for('static',filename='styles/bootstrap.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="outer">
+    <div class="inner">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('menu') }}">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <img class="menu img-fluid" src="{{ url_for('static',filename='images/Tastinglogo2.png') }}" Width="1110px">
+    </div>
+  </div>
+
+<script type="text/javascript" src="{{ url_for('static',filename='jquery.js') }}"></script>
+<script src="{{ url_for('static',filename='functions.js') }}"></script>
+<script src="{{ url_for('static',filename='bootstrap.js') }}"></script>
+
+</body>
+
+</html>

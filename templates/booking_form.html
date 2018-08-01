@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title> The Scarlet Letter </title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/booking_form.css') }}">
+  <link rel="icon" type="image/ico" href="{{ url_for('static',filename='images/favicon.ico') }}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+  <link href="{{ url_for('static',filename='styles/bootstrap.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('menu') }}">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Booking Form -->
+
+  <form class="needs-validation" novalidate action="{{ url_for('bookingconfirmed') }}" method="POST">
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom01">First name</label>
+        <input type="text" name = "firstname" class="form-control" id="validationCustom01" placeholder="First name" required>
+        <div class="invalid-feedback">
+          Please enter a first name.
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom02">Last name</label>
+        <input type="text" name = "lastname" class="form-control" id="validationCustom02" placeholder="Last name" required>
+        <div class="invalid-feedback">
+          Please enter a last name.
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom03">Email Address</label>
+        <input type="email" name = "emailaddress" class="form-control" id="validationCustom01" placeholder="Email Address" required>
+        <div class="invalid-feedback">
+          Please enter a valid email address.
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom04">Phone Number</label>
+        <input type="tel" name = "phonenumber" class="form-control" id="validationCustom03" placeholder="Phone Number" required>
+        <div class="invalid-feedback">
+          Please provide a valid phone number.
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom05">Number of Guests</label>
+        <select type="number" name = "numberofguests" class="form-control" id="validationCustom05" required>
+          <option value="2guests">2</option>
+          <option value="3guests">3</option>
+          <option value="4guests">4</option>
+          <option value="5guests">5</option>
+          <option value="6guests">6</option>
+        </select>
+        <div class="invalid-feedback">
+          Please choose a number of guests.
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom06">Date and Time of visit</label>
+        <input type="datetime-local" name = "visitdatetime" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Please provide a valid date and time.
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+       </div>
+     </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-4 mb-3">
+        <label for="validationCustom07">How Long Would You Like To Stay?</label>
+        <select type="text" name = "visitduration" class="form-control" id="validationCustom07" required>
+          <option value="30 minutes">30 minutes</option>
+          <option value="1 hour">1 hour</option>
+          <option value="1 hour 30 minutes">1 hour 30 minutes</option>
+          <option value="2 hours">2 hours</option>
+          <option value="2 hours 30 minutes">2 hours 30 minutes</option>
+          <option value="3 hours">3 hours</option>
+          <option value="3 hours 30 minutes">3 hours 30 minutes</option>
+          <option value="4 hours">4 hours</option>
+          <option value="4 hours 30 minutes">4 hours 30 minutes</option>
+          <option value="5 hours">5 hours</option>
+        <select>
+        <div class="invalid-feedback">
+          Please choose a duration of stay.
+        </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </form>
+
+<script type="text/javascript" src="{{ url_for('static',filename='jquery.js') }}"></script>
+<script src="{{ url_for('static',filename='bootstrap.js') }}"></script>
+<script src="{{ url_for('static',filename='functions.js') }}"></script>
+
+</body>
+
+</html>

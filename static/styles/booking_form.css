@@ -1,0 +1,30 @@
+body {
+  background-image: url("img/cocktails/trend-of-blank-telegram-template-with-lets-married-54786-free.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.needs-validation {
+  margin-top: 150px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: black !important;
+}
+nav .navbar-nav li a {
+   font-size: 20px;
+}
+.navbar-nav li{
+  padding-left:40px;
+  padding-right:40px;
+  margin-top: -10px;
+  font-family: 'Sanchez', serif;
+  font-weight: bold;
+}
+@media (min-width: 375px) and (max-width: 1000px) {
+  body {background-image: url("img/leaf.png")}
+  label {color: white}
+  .needs-validation {margin-top: 50px}
+  .navbar-nav li a {color: white}
+  .navbar-dark .navbar-nav .nav-link {color: white !important;}
+  .button {position: sticky;}
+  .navbar-nav li {padding-left:40px; padding-right:40px; padding-top: 20px;}
+}
