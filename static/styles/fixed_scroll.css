@@ -40,14 +40,14 @@ margin-bottom: -50px;
 }
 
 @media (min-width: 375px) and (max-width: 812px) {
-  .cocktail_box {background-image: url("img/cinema/mint.gif"); background-position: center;}
+  .cocktail_box {background-image: url("img/cinema/berry.gif"); background-position: center;}
 }
 @media (min-width: 813px) and (max-width:950px) {
   .cocktail_box {background-image: url("img/cinema/pour.gif"); background-position: center; background-size: cover;}
 
 }
 @media (min-width: 951px) and (max-width:1270px) {
-  .cocktail_box {background-image: url("img/cinema/berry.gif"); background-position: center;}
+  .cocktail_box {background-image: url("img/cinema/mint.gif"); background-position: center;}
 }
 @media (max-width:1270px) {
   .coffee {display: none;}
