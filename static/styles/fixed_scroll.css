@@ -47,7 +47,7 @@ margin-bottom: -50px;
 
 }
 @media (min-width: 951px) and (max-width:1270px) {
-  .cocktail_box {background-image: url("img/cinema/mint.gif"); background-position: center;}
+  .cocktail_box {background-image: url("img/cinema/berry.gif"); background-position: center;}
 }
 @media (max-width:1270px) {
   .coffee {display: none;}
